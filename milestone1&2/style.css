@@ -1,0 +1,110 @@
+*{
+   font-family: cursive;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+body{
+   background-color: #7C93C3;
+}
+.resume-page{
+   background-color: rgb(251, 250, 252);
+   max-width: 800px;
+   margin: 60px auto;
+   height: 1150px;
+   padding: 20px;
+   box-shadow: 0 2px 20px #ffffff;
+}
+.header{
+   text-align: center;
+}
+.header h1{
+   margin-bottom: 10px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header h3{
+   text-transform: uppercase;
+   font-size: 15px;
+   font-weight: 500;
+}
+.profile-area{
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: 25px auto;
+   border: 1px solid #131842;
+}
+.profile-area img{
+   width: 100%;
+}
+.main{
+   display: flex;
+   flex-wrap: wrap;
+}
+.left-side{
+   flex: 1;
+   padding: 30px;
+}
+.left-side p{
+   line-height: 2;
+}
+.left-side ul li{
+   line-height: 2;
+}
+h2{
+   background-color: #131842;
+   padding: 15px;
+   color: #fff;
+   margin: 30px 0;
+   font-size: 20px;
+   border-radius: 50px 50px ;
+}
+.right-side{
+   flex: 1;
+   padding: 30px;
+}
+.right-side p{
+   line-height: 2.9;
+}
+.right-side ul li{
+   line-height: 2;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .resume-page{
+      width: 95%;
+      height: auto;
+   }
+   h2{
+      font-size: 18px;
+   }
+}
+@media screen and (max-width: 600px) {
+   .main{
+      flex-direction: column;
+   }
+   .left-side,
+   .right-side{
+      flex: none;
+      width: 100%;
+   }
+   .resume-page{
+      width: 95%;
+      height: auto;
+   }
+   h2{
+      font-size: 15px;
+
+   }
+}
+.togglebutton{
+   border-radius: 10px;
+   box-shadow: 0 0 15px rgb(5, 5, 69);
+   cursor: pointer;
+   margin-top: 30px;
+   font-size: 18px;
+}
+
+.togglebutton:hover{
+   background-color:#171f65;
+}
